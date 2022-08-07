@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Practical-7</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bgimg">
+    <div class="grid">
+        <h2>Registration Form</h2>
+        <form onSubmit="alert('Thank You For Submit Form')">
+            <table class="t">
+                <tr>
+                    <td class="tc">First Name<sup id="r">*</sup> : </td>
+                    <td><input type="text" id="bg" required></td>
+                </tr>
+                <tr>
+                    <td class="tc">Middle Name<sup id="r">*</sup> : </td>
+                    <td><input type="text" id="bg" required></td>
+                </tr>
+                <tr>
+                    <td class="tc">Last Name<sup id="r">*</sup> : </td>
+                    <td><input type="text" id="bg" required></td>
+                </tr>
+                <tr>
+                    <td class="tc">Gender : </td>
+                    <td class="tc1"><input type="radio" name="gender" value="male">Male <input type="radio" name="gender"
+                            value="">Female</td>
+                </tr>
+                <tr>
+                    <td class="tc">Address<sup id="r">*</sup> : </td>
+                    <td><textarea name="address" rows=“100" cols=“100" id="bg" required></textarea></td>
+                </tr>
+                <tr>
+                    <td class="tc">Phone No<sup id="r">*</sup> : </td>
+                    <td><input type="tel" id="bg" required></td>
+                </tr>
+                <tr>
+                    <td class="tc">Email-Id<sup id="r">*</sup> : </td>
+                    <td><input type="email" id="bg" required></td>
+                </tr>
+                <tr>
+                    <td class="tc">Hobbies : </td>
+                    <td class="tc1">
+                        <input type="checkbox" name="hobbie" value="cricket">Cricket
+                        <input type="checkbox" name="hobbie" value="tennis">Tennis
+                        <input type="checkbox" name="hobbie" value="football">Football
+                        <input type="checkbox" name="hobbie" value="basketball">Basketball
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tc">City : </td>
+                    <td> <select name="city" id="bg" class="m1">
+                            <option value="city">City</option>
+                            <option value="valsad">Valsad</option>
+                            <option value="pune">Pune</option>
+                            <option value="bhopal">Bhopal</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td class="tc">State : </td>
+                    <td><select name="state" id="bg">
+                            <option value="state">State</option>
+                            <option value="gujarat">Gujarat</option>
+                            <option value="maharashtra">Maharashtra</option>
+                            <option value="mp">Madhya Pradesh</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td class="tc">Country : </td>
+                    <td><select name="country" id="bg" class="m2">
+                            <option value="country">country</option>
+                            <option value="in">India</option>
+                            <option value="us">United State</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td class="tc">College Name :</td>
+                    <td><select name="clg" id="bg" class="m3">
+                            <option value="clg">College</option>
+                            <option value="pu">Parul University</option>
+                            <option value="iit">IIT</option>
+                            <option value="iim">IIM</option>
+                        </select></td>
+                </tr>
+            </table>
+            <input id="button" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

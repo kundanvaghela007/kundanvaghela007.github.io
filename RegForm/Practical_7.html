@@ -1,0 +1,149 @@
+<html>
+<head>
+    <title>Practical-7</title>
+    <style>
+        #bg{
+            background-color: lightseagreen;
+            border-radius: 8px;
+            font-size: large;
+            font-family: 'Times New Roman';
+        }
+        .m1{
+            margin-right: 60px;
+        }
+        .m2{
+            margin-right: 25px;
+        }
+        .m3{
+            margin-right: 5px;
+        }
+        h2{
+            color: yellow;text-align: center;
+            margin: 40px;
+            margin-left: 90px;
+            text-shadow: 5px 3px 2px darkorchid;
+        }
+        #r{
+            color: red;
+        }
+        .tc{
+            color: red;
+            font-size: large;
+            font-family: 'Times New Roman';
+        }
+        .tc1{
+            color: lightsalmon;
+        }
+        #button{
+            color: blue;
+            border-radius: 12px;
+            margin: 25px;
+            margin-left: 46%;
+            background-color: lightgoldenrodyellow; 
+            box-shadow: 2px 2px lightskyblue;
+            width: 10%;
+            font-size: large;
+            font-family: 'Times New Roman';
+        }
+        .t{
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            width: 80%;
+            height: 50%;
+            border: double 4px transparent;
+            border-radius: 20px;
+            background-image: linear-gradient(to top left, #00ffff 0%, #ccff33 100%), radial-gradient(circle at top left, #f00,#3020ff);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            box-shadow: 10px 15px 6px limegreen;
+        }
+        .bgimg{
+            background-image: url("bg2.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body class="bgimg">
+        <h2>Registration Form</h2>
+        <form onSubmit="alert('Thank You For Submit Form')">
+            <table class="t">
+                <tr>
+                    <td class="tc">First Name<sup id="r">*</sup> : </td>
+                    <td><input type="text" id="bg" required></td>
+                </tr>
+                <tr>
+                    <td class="tc">Middle Name<sup id="r">*</sup> : </td>
+                    <td><input type="text" id="bg" required></td>
+                </tr>
+                <tr>
+                    <td class="tc">Last Name<sup id="r">*</sup> : </td>
+                    <td><input type="text" id="bg" required></td>
+                </tr>
+                <tr>
+                    <td class="tc">Gender : </td>
+                    <td class="tc1"><input type="radio" name="gender" value="male">Male <input type="radio" name="gender"
+                            value="">Female</td>
+                </tr>
+                <tr>
+                    <td class="tc">Address<sup id="r">*</sup> : </td>
+                    <td><textarea name="address" rows=“100" cols=“100" id="bg" required></textarea></td>
+                </tr>
+                <tr>
+                    <td class="tc">Phone No<sup id="r">*</sup> : </td>
+                    <td><input type="tel" id="bg" required></td>
+                </tr>
+                <tr>
+                    <td class="tc">Email-Id<sup id="r">*</sup> : </td>
+                    <td><input type="email" id="bg" required></td>
+                </tr>
+                <tr>
+                    <td class="tc">Hobbies : </td>
+                    <td class="tc1">
+                        <input type="checkbox" name="hobbie" value="cricket">Cricket
+                        <input type="checkbox" name="hobbie" value="tennis">Tennis
+                        <input type="checkbox" name="hobbie" value="football">Football
+                        <input type="checkbox" name="hobbie" value="basketball">Basketball
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tc">City : </td>
+                    <td> <select name="city" id="bg" class="m1">
+                            <option value="city">City</option>
+                            <option value="valsad">Valsad</option>
+                            <option value="pune">Pune</option>
+                            <option value="bhopal">Bhopal</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td class="tc">State : </td>
+                    <td><select name="state" id="bg">
+                            <option value="state">State</option>
+                            <option value="gujarat">Gujarat</option>
+                            <option value="maharashtra">Maharashtra</option>
+                            <option value="mp">Madhya Pradesh</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td class="tc">Country : </td>
+                    <td><select name="country" id="bg" class="m2">
+                            <option value="country">country</option>
+                            <option value="in">India</option>
+                            <option value="us">United State</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td class="tc">College Name :</td>
+                    <td><select name="clg" id="bg" class="m3">
+                            <option value="clg">College</option>
+                            <option value="pu">Parul University</option>
+                            <option value="iit">IIT</option>
+                            <option value="iim">IIM</option>
+                        </select></td>
+                </tr>
+            </table>
+            <input id="button" type="submit" value="Submit">
+        </form>
+</body>
+</html>

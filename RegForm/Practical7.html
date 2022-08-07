@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Practical-7</title>
+</head>
+<body style="background: linear-gradient(to bottom left, #33ccff, #ff66ff);">
+        <h2 style="color: darkmagenta;text-align: center;margin: 50px;margin-left: 150px;text-shadow: 0 0 10px #FF0000;">Registration Form</h2>
+        <form onSubmit="alert('Thank You For Submit Form')">
+            <table style="text-align: center;margin-left: 38%;width: 450px;height: 550px;border: double 4px transparent;
+            border-radius: 20px;background-image: linear-gradient(to bottom right,darkblue, magenta);
+            background-origin: border-box;">
+                <tr>
+                    <td style="color: aqua;font-size: large;font-family: 'Times New Roman';">First Name<sup id="r" style="color: red;">*</sup> : </td>
+                    <td><input type="text" style="background-color: lightcoral;border-radius: 8px;font-size: large;font-family: 'Times New Roman';" required></td>
+                </tr>
+                <tr>
+                    <td style="color: aqua;font-size: large;font-family: 'Times New Roman';">Middle Name<sup id="r" style="color: red;">*</sup> : </td>
+                    <td><input type="text" style="background-color: lightcoral;border-radius: 8px;font-size: large;font-family: 'Times New Roman';" required></td>
+                </tr>
+                <tr>
+                    <td style="color: aqua;font-size: large;font-family: 'Times New Roman';">Last Name<sup id="r" style="color: red;">*</sup> : </td>
+                    <td><input type="text" style="background-color: lightcoral;border-radius: 8px;font-size: large;font-family: 'Times New Roman';" required></td>
+                </tr>
+                <tr>
+                    <td style="color: aqua;font-size: large;font-family: 'Times New Roman';">Gender : </td>
+                    <td style="color: lightskyblue;"><input type="radio" name="gender" value="male">Male <input type="radio" name="gender"
+                            value="">Female</td>
+                </tr>
+                <tr>
+                    <td style="color: aqua;font-size: large;font-family: 'Times New Roman';">Address<sup id="r" style="color: red;">*</sup> : </td>
+                    <td><textarea name="address" rows=“100" cols=“100" style="background-color: lightcoral;border-radius: 8px;font-size: large;font-family: 'Times New Roman';" required></textarea></td>
+                </tr>
+                <tr>
+                    <td style="color: aqua;font-size: large;font-family: 'Times New Roman';">Phone No : </td>
+                    <td><input type="tel" style="background-color: lightcoral;border-radius: 8px;font-size: large;font-family: 'Times New Roman';" required></td>
+                </tr>
+                <tr>
+                    <td style="color: aqua;font-size: large;font-family: 'Times New Roman';">Email-Id : </td>
+                    <td><input type="email" style="background-color: lightcoral;border-radius: 8px;font-size: large;font-family: 'Times New Roman';" required></td>
+                </tr>
+                <tr>
+                    <td style="color: aqua;font-size: large;font-family: 'Times New Roman';">Hobbies : </td>
+                    <td style="color: lightskyblue;">
+                        <input type="checkbox" name="hobbie" value="cricket">Cricket
+                        <input type="checkbox" name="hobbie" value="tennis">Tennis
+                        <input type="checkbox" name="hobbie" value="football">Football
+                        <input type="checkbox" name="hobbie" value="basketball">Basketball
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: aqua;font-size: large;font-family: 'Times New Roman';">City : </td>
+                    <td> <select name="city" style="background-color: lightcoral;border-radius: 12px;margin-right: 60px;font-size: large;font-family: 'Times New Roman';">
+                            <option value="city">City</option>
+                            <option value="valsad">Valsad</option>
+                            <option value="pune">Pune</option>
+                            <option value="bhopal">Bhopal</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td style="color: aqua;font-size: large;font-family: 'Times New Roman';">State : </td>
+                    <td><select name="state" style="background-color: lightcoral;border-radius: 8px;font-size: large;font-family: 'Times New Roman';">
+                            <option value="state">State</option>
+                            <option value="gujarat">Gujarat</option>
+                            <option value="maharashtra">Maharashtra</option>
+                            <option value="mp">Madhya Pradesh</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td style="color: aqua;font-size: large;font-family: 'Times New Roman';">Country : </td>
+                    <td><select name="country" style="background-color: lightcoral;border-radius: 8px;margin-right: 25px;font-size: large;font-family: 'Times New Roman';">
+                            <option value="country">country</option>
+                            <option value="in">India</option>
+                            <option value="us">United State</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td style="color: aqua;font-size: large;font-family: 'Times New Roman';">College Name :</td>
+                    <td><select name="clg" style="background-color: lightcoral;border-radius: 8px;margin-right: 2px;font-size: large;font-family: 'Times New Roman';">
+                            <option value="clg">College</option>
+                            <option value="pu">Parul University</option>
+                            <option value="iit">IIT</option>
+                            <option value="iim">IIM</option>
+                        </select></td>
+                </tr>
+            </table>
+            <input style="color: blue;width: 10%; border-radius: 12px;margin: 25px; margin-left: 48%;background-color: lightseagreen;" type="submit" value="Submit">
+        </form>
+</body>
+
+</html>
