@@ -1,0 +1,117 @@
+.logo{
+    margin: 2rem;
+}
+body{
+    background-color: magenta;
+
+    background-image: url("bg5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.ph{
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile-nav{
+    display: none;
+}
+.pn{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    margin-top: -50px;
+    margin-left: -30%;
+
+    background: hsl(0 0% 0% / 0.5);
+}
+.pn a{
+    text-decoration: none;
+
+}
+.pn a > [aria-hidden="true"]{
+    font-weight: 700;
+    margin-inline-end: 0.75em;
+}
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+@media (max-width: 35em){
+    body{
+        background-size: 150vh;
+    }
+    .pn{
+        gap: 2em;
+        position: fixed;
+        z-index: 1000;
+        inset: 35% 0 0 0;
+        flex-direction: column;
+        padding: min(10vh,10rem) 2em;
+
+        margin-top: 0;
+        margin-left: 0;
+
+        transform: translateY(100%);
+        transition: transform 350ms ease-out;
+    }
+    .con{
+        width: 100%;
+        height: 180vw;
+    }
+    .mobile-nav{
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: url("Menu1.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 3rem;
+        border: 0;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+    }
+    .logo{
+        width: 7vh;
+    }
+    .mobile-nav[aria-expanded="true"]{
+        background-image: url("Close.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media (min-width: 35em){
+    .pn{
+        gap: clamp(1.5rem,5vw,3rem);
+        padding-block: 2rem;
+        padding-inline: clamp(3rem, 8vw ,10rem);
+    }
+    .logo{
+        width: 15vh;
+    }
+}
+@supports (backdrop-filter: blur(1rem)){
+    .pn{
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+    }
+}
+@media (max-width: 915px){
+    body{
+        height: 100vh;
+    }
+}
+.pn[data-visible="true"]{
+    transform: translateY(0%);
+}
+a{
+    color: aqua;
+}
+*{
+    margin: 0;
+}
+.con{
+    width: 100%;
+}
